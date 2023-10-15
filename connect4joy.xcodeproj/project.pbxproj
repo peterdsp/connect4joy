@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C3B94EE2ADBF11F00B26199 /* connect4joyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B94ED2ADBF11F00B26199 /* connect4joyApp.swift */; };
+		2C3B94F02ADBF11F00B26199 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B94EF2ADBF11F00B26199 /* ContentView.swift */; };
+		2C3B94F22ADBF11F00B26199 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B94F12ADBF11F00B26199 /* Item.swift */; };
+		2C3B94F42ADBF12000B26199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B94F32ADBF12000B26199 /* Assets.xcassets */; };
+		2C3B94F82ADBF12000B26199 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B94F72ADBF12000B26199 /* Preview Assets.xcassets */; };
+		2C3B95022ADBF12000B26199 /* connect4joyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B95012ADBF12000B26199 /* connect4joyTests.swift */; };
+		2C3B950C2ADBF12000B26199 /* connect4joyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B950B2ADBF12000B26199 /* connect4joyUITests.swift */; };
+		2C3B950E2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B950D2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C3B94FE2ADBF12000B26199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C3B94E22ADBF11F00B26199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C3B94E92ADBF11F00B26199;
+			remoteInfo = connect4joy;
+		};
+		2C3B95082ADBF12000B26199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C3B94E22ADBF11F00B26199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C3B94E92ADBF11F00B26199;
+			remoteInfo = connect4joy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C3B94EA2ADBF11F00B26199 /* connect4joy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = connect4joy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3B94ED2ADBF11F00B26199 /* connect4joyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect4joyApp.swift; sourceTree = "<group>"; };
+		2C3B94EF2ADBF11F00B26199 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C3B94F12ADBF11F00B26199 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2C3B94F32ADBF12000B26199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C3B94F52ADBF12000B26199 /* connect4joy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = connect4joy.entitlements; sourceTree = "<group>"; };
+		2C3B94F72ADBF12000B26199 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C3B94FD2ADBF12000B26199 /* connect4joyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = connect4joyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3B95012ADBF12000B26199 /* connect4joyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect4joyTests.swift; sourceTree = "<group>"; };
+		2C3B95072ADBF12000B26199 /* connect4joyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = connect4joyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3B950B2ADBF12000B26199 /* connect4joyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect4joyUITests.swift; sourceTree = "<group>"; };
+		2C3B950D2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect4joyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C3B94E72ADBF11F00B26199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C3B94FA2ADBF12000B26199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C3B95042ADBF12000B26199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C3B94E12ADBF11F00B26199 = {
+			isa = PBXGroup;
+			children = (
+				2C3B94EC2ADBF11F00B26199 /* connect4joy */,
+				2C3B95002ADBF12000B26199 /* connect4joyTests */,
+				2C3B950A2ADBF12000B26199 /* connect4joyUITests */,
+				2C3B94EB2ADBF11F00B26199 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C3B94EB2ADBF11F00B26199 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C3B94EA2ADBF11F00B26199 /* connect4joy.app */,
+				2C3B94FD2ADBF12000B26199 /* connect4joyTests.xctest */,
+				2C3B95072ADBF12000B26199 /* connect4joyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C3B94EC2ADBF11F00B26199 /* connect4joy */ = {
+			isa = PBXGroup;
+			children = (
+				2C3B94ED2ADBF11F00B26199 /* connect4joyApp.swift */,
+				2C3B94EF2ADBF11F00B26199 /* ContentView.swift */,
+				2C3B94F12ADBF11F00B26199 /* Item.swift */,
+				2C3B94F32ADBF12000B26199 /* Assets.xcassets */,
+				2C3B94F52ADBF12000B26199 /* connect4joy.entitlements */,
+				2C3B94F62ADBF12000B26199 /* Preview Content */,
+			);
+			path = connect4joy;
+			sourceTree = "<group>";
+		};
+		2C3B94F62ADBF12000B26199 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2C3B94F72ADBF12000B26199 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C3B95002ADBF12000B26199 /* connect4joyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C3B95012ADBF12000B26199 /* connect4joyTests.swift */,
+			);
+			path = connect4joyTests;
+			sourceTree = "<group>";
+		};
+		2C3B950A2ADBF12000B26199 /* connect4joyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C3B950B2ADBF12000B26199 /* connect4joyUITests.swift */,
+				2C3B950D2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift */,
+			);
+			path = connect4joyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C3B94E92ADBF11F00B26199 /* connect4joy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C3B95112ADBF12000B26199 /* Build configuration list for PBXNativeTarget "connect4joy" */;
+			buildPhases = (
+				2C3B94E62ADBF11F00B26199 /* Sources */,
+				2C3B94E72ADBF11F00B26199 /* Frameworks */,
+				2C3B94E82ADBF11F00B26199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = connect4joy;
+			productName = connect4joy;
+			productReference = 2C3B94EA2ADBF11F00B26199 /* connect4joy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C3B94FC2ADBF12000B26199 /* connect4joyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C3B95142ADBF12000B26199 /* Build configuration list for PBXNativeTarget "connect4joyTests" */;
+			buildPhases = (
+				2C3B94F92ADBF12000B26199 /* Sources */,
+				2C3B94FA2ADBF12000B26199 /* Frameworks */,
+				2C3B94FB2ADBF12000B26199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C3B94FF2ADBF12000B26199 /* PBXTargetDependency */,
+			);
+			name = connect4joyTests;
+			productName = connect4joyTests;
+			productReference = 2C3B94FD2ADBF12000B26199 /* connect4joyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C3B95062ADBF12000B26199 /* connect4joyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C3B95172ADBF12000B26199 /* Build configuration list for PBXNativeTarget "connect4joyUITests" */;
+			buildPhases = (
+				2C3B95032ADBF12000B26199 /* Sources */,
+				2C3B95042ADBF12000B26199 /* Frameworks */,
+				2C3B95052ADBF12000B26199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C3B95092ADBF12000B26199 /* PBXTargetDependency */,
+			);
+			name = connect4joyUITests;
+			productName = connect4joyUITests;
+			productReference = 2C3B95072ADBF12000B26199 /* connect4joyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C3B94E22ADBF11F00B26199 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2C3B94E92ADBF11F00B26199 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					2C3B94FC2ADBF12000B26199 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2C3B94E92ADBF11F00B26199;
+					};
+					2C3B95062ADBF12000B26199 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2C3B94E92ADBF11F00B26199;
+					};
+				};
+			};
+			buildConfigurationList = 2C3B94E52ADBF11F00B26199 /* Build configuration list for PBXProject "connect4joy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C3B94E12ADBF11F00B26199;
+			productRefGroup = 2C3B94EB2ADBF11F00B26199 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C3B94E92ADBF11F00B26199 /* connect4joy */,
+				2C3B94FC2ADBF12000B26199 /* connect4joyTests */,
+				2C3B95062ADBF12000B26199 /* connect4joyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C3B94E82ADBF11F00B26199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3B94F82ADBF12000B26199 /* Preview Assets.xcassets in Resources */,
+				2C3B94F42ADBF12000B26199 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C3B94FB2ADBF12000B26199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C3B95052ADBF12000B26199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C3B94E62ADBF11F00B26199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3B94F02ADBF11F00B26199 /* ContentView.swift in Sources */,
+				2C3B94F22ADBF11F00B26199 /* Item.swift in Sources */,
+				2C3B94EE2ADBF11F00B26199 /* connect4joyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C3B94F92ADBF12000B26199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3B95022ADBF12000B26199 /* connect4joyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C3B95032ADBF12000B26199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3B950C2ADBF12000B26199 /* connect4joyUITests.swift in Sources */,
+				2C3B950E2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C3B94FF2ADBF12000B26199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C3B94E92ADBF11F00B26199 /* connect4joy */;
+			targetProxy = 2C3B94FE2ADBF12000B26199 /* PBXContainerItemProxy */;
+		};
+		2C3B95092ADBF12000B26199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C3B94E92ADBF11F00B26199 /* connect4joy */;
+			targetProxy = 2C3B95082ADBF12000B26199 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C3B950F2ADBF12000B26199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C3B95102ADBF12000B26199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2C3B95122ADBF12000B26199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = connect4joy/connect4joy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"connect4joy/Preview Content\"";
+				DEVELOPMENT_TEAM = R8JF2W45R3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playfulmind.connect4joy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C3B95132ADBF12000B26199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = connect4joy/connect4joy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"connect4joy/Preview Content\"";
+				DEVELOPMENT_TEAM = R8JF2W45R3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playfulmind.connect4joy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C3B95152ADBF12000B26199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8JF2W45R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playfulmind.connect4joyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/connect4joy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/connect4joy";
+			};
+			name = Debug;
+		};
+		2C3B95162ADBF12000B26199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8JF2W45R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playfulmind.connect4joyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/connect4joy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/connect4joy";
+			};
+			name = Release;
+		};
+		2C3B95182ADBF12000B26199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8JF2W45R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playfulmind.connect4joyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = connect4joy;
+			};
+			name = Debug;
+		};
+		2C3B95192ADBF12000B26199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R8JF2W45R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playfulmind.connect4joyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = connect4joy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C3B94E52ADBF11F00B26199 /* Build configuration list for PBXProject "connect4joy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C3B950F2ADBF12000B26199 /* Debug */,
+				2C3B95102ADBF12000B26199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C3B95112ADBF12000B26199 /* Build configuration list for PBXNativeTarget "connect4joy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C3B95122ADBF12000B26199 /* Debug */,
+				2C3B95132ADBF12000B26199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C3B95142ADBF12000B26199 /* Build configuration list for PBXNativeTarget "connect4joyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C3B95152ADBF12000B26199 /* Debug */,
+				2C3B95162ADBF12000B26199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C3B95172ADBF12000B26199 /* Build configuration list for PBXNativeTarget "connect4joyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C3B95182ADBF12000B26199 /* Debug */,
+				2C3B95192ADBF12000B26199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C3B94E22ADBF11F00B26199 /* Project object */;
+}
