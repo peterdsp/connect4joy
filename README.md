@@ -30,8 +30,6 @@ Guess The Number is a numbers game that tests your deduction skills. Try to gues
   
 - **SwiftData**: SwiftData is utilized for managing and storing move timestamps in Connect Four and Tic-Tac-Toe using the `Item` model class.
 
-## Screenshots (Add relevant screenshots for each game)
-
 ## Getting Started
 
 To run the app, you will need Xcode and an iOS simulator or a physical iOS device. Simply open the project in Xcode and run the app on the desired target.
