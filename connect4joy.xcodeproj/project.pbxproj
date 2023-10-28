@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2C3B94EE2ADBF11F00B26199 /* connect4joyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B94ED2ADBF11F00B26199 /* connect4joyApp.swift */; };
-		2C3B94F02ADBF11F00B26199 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B94EF2ADBF11F00B26199 /* ContentView.swift */; };
+		2C3B94F02ADBF11F00B26199 /* Connect4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B94EF2ADBF11F00B26199 /* Connect4View.swift */; };
 		2C3B94F22ADBF11F00B26199 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B94F12ADBF11F00B26199 /* Item.swift */; };
 		2C3B94F42ADBF12000B26199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B94F32ADBF12000B26199 /* Assets.xcassets */; };
 		2C3B94F82ADBF12000B26199 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B94F72ADBF12000B26199 /* Preview Assets.xcassets */; };
 		2C3B95022ADBF12000B26199 /* connect4joyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B95012ADBF12000B26199 /* connect4joyTests.swift */; };
 		2C3B950C2ADBF12000B26199 /* connect4joyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B950B2ADBF12000B26199 /* connect4joyUITests.swift */; };
 		2C3B950E2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B950D2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift */; };
+		2CB434092AEDB56100382005 /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB434082AEDB56100382005 /* TicTacToeView.swift */; };
+		2CB4340D2AEDB61F00382005 /* GameSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4340C2AEDB61F00382005 /* GameSelectionView.swift */; };
+		2CB434102AEDB78F00382005 /* GuessTheNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB4340F2AEDB78F00382005 /* GuessTheNumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		2C3B94EA2ADBF11F00B26199 /* connect4joy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = connect4joy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3B94ED2ADBF11F00B26199 /* connect4joyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect4joyApp.swift; sourceTree = "<group>"; };
-		2C3B94EF2ADBF11F00B26199 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C3B94EF2ADBF11F00B26199 /* Connect4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect4View.swift; sourceTree = "<group>"; };
 		2C3B94F12ADBF11F00B26199 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2C3B94F32ADBF12000B26199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C3B94F52ADBF12000B26199 /* connect4joy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = connect4joy.entitlements; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		2C3B95072ADBF12000B26199 /* connect4joyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = connect4joyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3B950B2ADBF12000B26199 /* connect4joyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect4joyUITests.swift; sourceTree = "<group>"; };
 		2C3B950D2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connect4joyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CB434082AEDB56100382005 /* TicTacToeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
+		2CB4340C2AEDB61F00382005 /* GameSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectionView.swift; sourceTree = "<group>"; };
+		2CB4340F2AEDB78F00382005 /* GuessTheNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheNumberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				2C3B94ED2ADBF11F00B26199 /* connect4joyApp.swift */,
-				2C3B94EF2ADBF11F00B26199 /* ContentView.swift */,
+				2CB4340C2AEDB61F00382005 /* GameSelectionView.swift */,
+				2CB4340E2AEDB68E00382005 /* GamesView */,
 				2C3B94F12ADBF11F00B26199 /* Item.swift */,
 				2C3B94F32ADBF12000B26199 /* Assets.xcassets */,
 				2C3B94F52ADBF12000B26199 /* connect4joy.entitlements */,
@@ -130,6 +137,16 @@
 				2C3B950D2ADBF12000B26199 /* connect4joyUITestsLaunchTests.swift */,
 			);
 			path = connect4joyUITests;
+			sourceTree = "<group>";
+		};
+		2CB4340E2AEDB68E00382005 /* GamesView */ = {
+			isa = PBXGroup;
+			children = (
+				2C3B94EF2ADBF11F00B26199 /* Connect4View.swift */,
+				2CB434082AEDB56100382005 /* TicTacToeView.swift */,
+				2CB4340F2AEDB78F00382005 /* GuessTheNumberView.swift */,
+			);
+			path = GamesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C3B94F02ADBF11F00B26199 /* ContentView.swift in Sources */,
+				2C3B94F02ADBF11F00B26199 /* Connect4View.swift in Sources */,
 				2C3B94F22ADBF11F00B26199 /* Item.swift in Sources */,
+				2CB4340D2AEDB61F00382005 /* GameSelectionView.swift in Sources */,
+				2CB434092AEDB56100382005 /* TicTacToeView.swift in Sources */,
 				2C3B94EE2ADBF11F00B26199 /* connect4joyApp.swift in Sources */,
+				2CB434102AEDB78F00382005 /* GuessTheNumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

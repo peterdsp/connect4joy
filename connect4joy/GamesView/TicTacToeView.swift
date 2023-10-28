@@ -1,34 +1,38 @@
 //
-//  ContentView.swift
+//  TicTacToeView.swift
 //  connect4joy
 //
-//  Created by Petros Dhespollari on 15/10/23.
+//  Created by Petros Dhespollari on 29/10/23.
 //
 
 import SwiftUI
 
-enum Player: String {
-    case red = "Player 1 (Red)"
-    case yellow = "Player 2 (Yellow)"
+enum TicTacToePlayer: String {
+    case x = "Player X"
+    case o = "Player O"
 }
 
-struct ContentView: View {
-    @State private var board: [[Player?]] = Array(repeating: Array(repeating: nil, count: 7), count: 6)
-    @State private var currentPlayer: Player = .red
-    @State private var winner: Player? = nil
+struct TicTacToeView: View {
+    @State private var board: [[TicTacToePlayer?]] = Array(repeating: Array(repeating: nil, count: 3), count: 3)
+    @State private var currentPlayer: TicTacToePlayer = .x
+    @State private var winner: TicTacToePlayer? = nil
     
     var body: some View {
         VStack {
+            Text("Tic-Tac-Toe")
+                .font(.largeTitle)
+                .padding()
+            
             Text("Current Player: \(currentPlayer.rawValue)")
                 .padding()
             
             VStack {
-                ForEach(0..<6, id: \.self) { row in
+                ForEach(0..<3, id: \.self) { row in
                     HStack {
-                        ForEach(0..<7, id: \.self) { col in
+                        ForEach(0..<3, id: \.self) { col in
                             Circle()
                                 .foregroundColor(getCircleColor(for: board[row][col]))
-                                .frame(width: 50, height: 50)
+                                .frame(width: 60, height: 60)
                                 .onTapGesture {
                                     if board[row][col] == nil && winner == nil {
                                         placePiece(row: row, col: col)
@@ -58,12 +62,12 @@ struct ContentView: View {
         }
     }
     
-    private func getCircleColor(for player: Player?) -> Color {
+    private func getCircleColor(for player: TicTacToePlayer?) -> Color {
         switch player {
-        case .red:
-            return .red
-        case .yellow:
-            return .yellow
+        case .x:
+            return .blue
+        case .o:
+            return .green
         case .none:
             return .gray
         }
@@ -79,10 +83,10 @@ struct ContentView: View {
         } else if checkForDraw() {
             winner = nil // Game is a draw
         } else {
-            currentPlayer = currentPlayer == .red ? .yellow : .red
+            currentPlayer = (currentPlayer == .x) ? .o : .x
         }
     }
-
+    
     private func checkForWin(row: Int, col: Int) -> Bool {
         let player = board[row][col]
         guard let currentPlayer = player else {
@@ -90,71 +94,66 @@ struct ContentView: View {
         }
         
         // Check horizontally
-        for i in 0..<4 {
-            if (col + i < 7) && (board[row][col + i] == currentPlayer) {
+        for i in 0..<3 {
+            if (col + i < 3) && (board[row][col + i] == currentPlayer) {
                 var count = 0
-                for j in 0..<4 {
-                    if (col + j < 7) && (board[row][col + j] == currentPlayer) {
+                for j in 0..<3 {
+                    if (col + j < 3) && (board[row][col + j] == currentPlayer) {
                         count += 1
                     }
                 }
-                if count == 4 {
+                if count == 3 {
                     return true
                 }
             }
         }
         
         // Check vertically
-        for i in 0..<4 {
-            if (row + i < 6) && (board[row + i][col] == currentPlayer) {
+        for i in 0..<3 {
+            if (row + i < 3) && (board[row + i][col] == currentPlayer) {
                 var count = 0
-                for j in 0..<4 {
-                    if (row + j < 6) && (board[row + j][col] == currentPlayer) {
+                for j in 0..<3 {
+                    if (row + j < 3) && (board[row + j][col] == currentPlayer) {
                         count += 1
                     }
                 }
-                if count == 4 {
+                if count == 3 {
                     return true
                 }
             }
         }
         
-        // Check diagonally (top-left to bottom-right)
-        for i in 0..<4 {
-            if (row + i < 6) && (col + i < 7) && (board[row + i][col + i] == currentPlayer) {
-                var count = 0
-                for j in 0..<4 {
-                    if (row + j < 6) && (col + j < 7) && (board[row + j][col + j] == currentPlayer) {
-                        count += 1
-                    }
+        // Check diagonals
+        if row == col {
+            var count = 0
+            for i in 0..<3 {
+                if (row + i < 3) && (col + i < 3) && (board[row + i][col + i] == currentPlayer) {
+                    count += 1
                 }
-                if count == 4 {
-                    return true
-                }
+            }
+            if count == 3 {
+                return true
             }
         }
         
-        // Check diagonally (bottom-left to top-right)
-        for i in 0..<4 {
-            if (row - i >= 0) && (col + i < 7) && (board[row - i][col + i] == currentPlayer) {
-                var count = 0
-                for j in 0..<4 {
-                    if (row - j >= 0) && (col + j < 7) && (board[row - j][col + j] == currentPlayer) {
-                        count += 1
-                    }
+        if row + col == 2 {
+            var count = 0
+            for i in 0..<3 {
+                if (row + i < 3) && (col - i >= 0) && (board[row + i][col - i] == currentPlayer) {
+                    count += 1
                 }
-                if count == 4 {
-                    return true
-                }
+            }
+            if count == 3 {
+                return true
             }
         }
         
         return false
     }
-
+    
     private func checkForDraw() -> Bool {
-        for row in 0..<6 {
-            for col in 0..<7 {
+        for row in 0..<3 {
+            for col in 0..<3 {
                 if board[row][col] == nil {
                     return false
                 }
@@ -162,16 +161,16 @@ struct ContentView: View {
         }
         return true
     }
-
+    
     private func restartGame() {
-        board = Array(repeating: Array(repeating: nil, count: 7), count: 6)
-        currentPlayer = .red
+        board = Array(repeating: Array(repeating: nil, count: 3), count: 3)
+        currentPlayer = .x
         winner = nil
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TicTacToeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TicTacToeView()
     }
 }

@@ -25,7 +25,9 @@ struct connect4joyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                GameSelectionView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }
